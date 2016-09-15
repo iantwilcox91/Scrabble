@@ -30,6 +30,7 @@ namespace ScrabbleScore.Objects
     {
       _userScore = CalculateScore();
     }
+    // SetUserScore will use CalculateScore to set the values correctly. remember to have methods ( methods are blue() ) with only one functionality
     public int CalculateScore()
     {
       string inputWord = this.GetUserWord();
@@ -70,7 +71,6 @@ namespace ScrabbleScore.Objects
           score += 0;
         }
       }
-
       return score;
     }
   }
